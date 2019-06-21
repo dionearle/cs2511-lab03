@@ -25,6 +25,10 @@ public class Course {
     public void addPrereq(Course course) {
         prereqs.add(course);
     }
+    
+    public List<Course> getPrereq() {
+        return prereqs;
+    }
 
     public String getCourseCode() {
         return courseCode;
@@ -32,6 +36,14 @@ public class Course {
 
     public int getUOC() {
         return uoc;
+    }
+    
+    public int getSizePrereqs() {
+    	return prereqs.size();
+    }
+    
+    public String getPrereqCourseCode(int i) {
+    	return prereqs.get(i).getCourseCode();
     }
 
 }

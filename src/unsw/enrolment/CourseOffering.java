@@ -27,5 +27,17 @@ public class CourseOffering {
     public String getTerm() {
         return term;
     }
+    
+    public int getNumCoursePrereqs() {
+    	return course.getSizePrereqs();
+    }
+    
+    public String getPrereqCourseCode(int i) {
+    	return course.getPrereqCourseCode(i);
+    }
+    
+    public String getCourseCode() {
+    	return course.getCourseCode();
+    }
 
 }

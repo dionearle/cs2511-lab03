@@ -14,5 +14,33 @@ public class Student {
 	public String getZID() {
 		return zid;
 	}
+	
+	public ArrayList<Enrolment> getEnrolments() {
+		return enrolments;
+	}
+
+	public String getZid() {
+		return zid;
+	}
+
+	public void setZid(String zid) {
+		this.zid = zid;
+	}
+
+	public void addEnrolment(Enrolment enrolment) {
+		enrolments.add(enrolment);
+	}
+	
+	public int getNumEnrolments() {
+		return enrolments.size();
+	}
+	
+	public String getEnrolmentCourseCode(int i) {
+		return enrolments.get(i).getCourseCode();
+	}
+	
+	public int getEnrolmentMark(int i) {
+		return enrolments.get(i).getEnrolmentMark(i);
+	}
 
 }
